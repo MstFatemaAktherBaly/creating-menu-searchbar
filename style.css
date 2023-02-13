@@ -1,0 +1,250 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    font-size: 22px;
+    text-decoration: none;
+    background: none;
+    
+}
+.h2_section_info .body a {
+    text-decoration: none;
+    font-size: 22px;
+    background: none;
+    color: #2ecc71;;
+    border: 2px solid #2ecc71;;
+    padding: 20px 35px;
+    margin-top: 50px 0;
+    margin-left: 0;
+    transition: .6s;
+}
+ .h2_section_info .body a:hover{
+color: #566366;
+}
+
+ul{
+    list-style-type: none;
+}
+.container{
+    width: 1180px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ .section_info h2{
+font-size: 30px;
+text-transform: uppercase;
+color: #142124;
+font-weight: 700;
+}
+ .section_info p{
+
+font-size: 18px;
+color: #919191;
+font-weight: 400;
+
+}
+.section_info h3{
+    font-size: 22px;
+text-transform: uppercase;
+color: #566366;
+font-weight: 700
+}
+.h2_section_info h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #566366;
+    font-weight: 700;
+    }
+.h2_section_info p{
+font-size: 18px;
+color: #919191;
+font-weight: 400;
+}
+.section_info  .bar{
+    color: #ffffff;
+    background-color: #2dcb71;
+    padding: 12px;
+    width: fit-content;
+    
+}
+/* common css end */
+/* search bar section start */
+#searchbar{
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 2px;
+    position: fixed;
+    top: 75px;
+    right: -250px;
+    /* left: 0; */
+    bottom: 0;
+    transition: .6s;
+    transform:skew(20deg);
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: right top;
+
+}
+#searchbar.active{
+    right: 0px;
+    transform:skew(0);
+    opacity: 1;
+    visibility: visible;
+}
+#sidebar ul li{
+    margin: 25px 0 0 20px;
+    line-height: 10px;
+}
+#sidebar ul li a{
+    color: black;
+    font-size: 20px;
+    position: fixed;
+}
+/* search bar section end */
+/* Sidebar section start */
+#sidebar{
+    width: 250px;
+    height: 450px;
+    background:white;
+    position: fixed;
+    top: 75px;
+    right: -250px;
+    /* left: 0; */
+    bottom: 0;
+    transition: .6s;
+    transform:skew(20deg);
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: right top;
+}
+#sidebar.active{
+    right: 0px;
+    transform:skew(0);
+    opacity: 1;
+    visibility: visible;
+}
+#sidebar ul li{
+    margin: 25px 0 0 20px;
+    line-height: 10px;
+}
+#sidebar ul li a{
+    color: black;
+    font-size: 20px;
+    position: fixed;
+}
+/* Sidebar section end */
+/* menu start */
+nav{
+    background-color: #bd6e14;
+    text-align: justify;
+    position: fixed;
+    width: 100%;
+}
+nav div .row{
+    align-items: center;
+}
+nav .logo{
+    width: 15%;
+    text-align: center;
+ 
+}
+nav .menu{
+    width: 85%;
+}
+nav .menu ul{
+    justify-content: flex-end;
+}
+nav .menu ul li a,
+nav .menu ul li button{
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 28px 24px;
+    display: inline-block;
+    transition: .6s;
+    background: none;
+    border: none;
+    
+}
+nav .menu ul li a:hover,
+nav .menu ul li button:hover{
+   color: black;
+   background: #c2a00b;
+   border-radius: 10px;
+}  
+
+
+/* menu end */
+/* banner section start */
+#banner{
+    background-image: url(flowers-19830__340.jpg);
+    height: 1000px;
+    background-size: cover;
+    text-align: center;
+    
+}
+#banner .container{
+  align-items: center;
+    margin:  auto;
+}
+#banner h1{
+border-top: 2px solid black;
+border-bottom:2px solid black ;
+  width: fit-content;
+  margin: auto; 
+font-size: 60px;
+text-transform: uppercase;
+color: black; 
+font-weight: 700;
+font-family: "Roboto";
+text-align: center;
+}
+#banner .border{
+    margin: 50px;
+}
+#banner a{
+    color: black;
+    border: 2px solid black;
+    padding: 20px 35px;
+    margin: 50px;
+    border-radius: 10px;
+}
+#banner a:hover{
+    color: #e0aa13;
+    border-radius: 10px;
+}
+
+/* Banner section end */
+#form .application{
+    width:50% ;
+    padding: 40px 20px 30px 40px;
+    background: #919191;
+    border: 1px solid black;
+}
+#form .application span{
+    position: absolute;
+    font-size: 15px;
+    color: #919191;
+}
+
+/* preloader section start */
+#preloader_container .preloader span{
+    width: 10px;
+    height: 200px;
+    display:inline-block;
+    color: rgb(100, 8, 8);
+}
+/* preloader section end */
